@@ -1,0 +1,91 @@
+/* Layout elementos genéricos */
+body, html{
+    background: #DCDCDC;
+    height: 100%;
+}
+
+header{ 
+    background: white;
+    /*background: linear-gradient(to bottom, #DCDCDC, white);*/
+}
+
+/* IDs */
+
+#navegacao1{
+    font-weight: bold;
+}
+
+#inicio{
+    background: white;
+}
+
+#caixaTexto1:hover{
+    background: #DCDCDC;
+    border-radius: 50%;
+    transition: background 6s;
+}
+
+#aboutUs{
+    height: 100%;
+}
+
+/* Classes configurando paralax e textos página home*/
+
+#content{
+	text-align: justify;
+}
+
+#aboutUs h3{
+	text-transform: uppercase;
+	color: #111;
+	text-align: center;
+}
+
+
+.box1, .box2, .box3{
+    position: relative;
+    height: 100%;
+    opacity: 0.6;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.box1{
+    background-image: url(../img/imagem.jpg);
+}
+
+.box2{
+    background-image: url(../img/imagem2.jpg);
+}
+
+.box3{
+    background-image: url(../img/imagem3.jpg);
+}
+
+.titulo{
+	position: absolute;
+	left: 0;
+	top:  30%;
+	width: 100%;
+	text-align: center;
+    color: #fff;
+	padding: 18px;
+	font-size: 25px;
+}
+
+/* Rodapé */
+
+footer{
+    background: white;
+    background: linear-gradient(to bottom, #DCDCDC, white);
+}
+
+footer p a{
+    text-decoration: none;
+}
+
+
+
+
