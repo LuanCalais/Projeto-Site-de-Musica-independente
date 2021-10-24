@@ -4,6 +4,28 @@ body, html{
     height: 100%;
 }
 
+/* Criando Aniimação da tela inicial */
+
+@keyframes animacao-index{
+    from{
+        background: white;
+        border-radius: 50%;
+    }
+
+    to{
+        background: #DCDCDC;
+        border-radius: 50%;
+    }
+}
+
+#caixaTexto1{
+    animation-name: animacao-index;
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
 header{ 
     background: white;
     /*background: linear-gradient(to bottom, #DCDCDC, white);*/
@@ -19,17 +41,13 @@ header{
     background: white;
 }
 
-#caixaTexto1:hover{
-    background: #DCDCDC;
-    border-radius: 50%;
-    transition: background 6s;
-}
+
 
 #aboutUs{
     height: 100%;
 }
 
-/* Classes configurando paralax e textos página home*/
+/* Classes configurando paralax e textos página AM.html*/
 
 #content{
 	text-align: justify;
@@ -75,6 +93,13 @@ header{
 	font-size: 25px;
 }
 
+/* Configurações das caixas */
+
+.box{
+    padding: 50px 0;
+    border-bottom: 1px solid white;
+}
+
 /* Rodapé */
 
 footer{
@@ -85,6 +110,8 @@ footer{
 footer p a{
     text-decoration: none;
 }
+
+
 
 
 
