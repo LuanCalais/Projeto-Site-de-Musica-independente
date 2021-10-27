@@ -63,7 +63,7 @@ header{
 .box1, .box2, .box3{
     position: relative;
     height: 100%;
-    opacity: 0.6;
+    opacity: 0.8;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -71,26 +71,33 @@ header{
 }
 
 .box1{
-    background-image: url(../img/imagem.jpg);
+    background-image: url(../img/logoAm.webp);
 }
 
 .box2{
-    background-image: url(../img/imagem2.jpg);
+    background-image: url(../img/AM1.jpg);
 }
 
 .box3{
-    background-image: url(../img/imagem3.jpg);
+    background-image: url(../img/AM2.jpg);
 }
 
 .titulo{
 	position: absolute;
 	left: 0;
-	top:  30%;
+	top:  45%;
 	width: 100%;
 	text-align: center;
-    color: #fff;
+    /*color: #fff;*/
 	padding: 18px;
 	font-size: 25px;
+}
+
+.box1 span.titulo, .box2 span.titulo, .box3 span.titulo{
+    color: #fff;
+    background-color: #111;
+    padding: 18px;
+    font-size: 15px;
 }
 
 /* Configurações das caixas */
@@ -99,6 +106,7 @@ header{
     padding: 50px 0;
     border-bottom: 1px solid white;
 }
+
 
 /* Rodapé */
 
@@ -111,6 +119,71 @@ footer p a{
     text-decoration: none;
 }
 
+/* media querys */
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+    h1{
+        font-size: 30px;
+    }
+
+    #caixaTexto1{
+        animation: none;
+    }
+
+    #inicio{
+        padding: 50px;
+    }
+ }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    h1{
+        font-size: 2em;
+    }
+
+    #caixaTexto1{
+        animation: none;
+    }
+
+    #inicio{
+        padding: 50px;
+    }
+ }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    h1{
+        font-size: 3em;
+    }
+
+    #caixaTexto1{
+        animation: none;
+    }
+
+    #inicio{
+        padding: 50px;
+    }
+
+ }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    h1{
+        font-size: 4em;
+    }
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    h1{
+        font-size: 60px;
+    }
+
+    #caixaTexto1{
+        padding: 10px;
+    }
+ }
 
 
 
