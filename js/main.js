@@ -1,18 +1,26 @@
 
+/*================================Lógica mostrar menos e mostrar mais 
+*/
 /*Variáveis para puxar o valor original dos parágrafos*/
-var p1 = document.getElementById('leia1')
-var p2 = document.getElementById('leia2')
-var p3 = document.getElementById('leia3')
+var p1 = document.getElementById('leia1').innerHTML
+var p2 = document.getElementById('leia2').innerHTML
+var p3 = document.getElementById('leia3').innerHTML
+
+console.log(p1)
 
 /* Função que verifica qual o valor está escrito no botão 'leia mais' ou 'mostrar menos' CORRIGIR----- */
-function verificaBotao(){
-    var tipo = document.getElementsByName('bLeia').innerHTML
-    console.log(tipo)
-    if(tipo === 'Leia mais'){
-        console.log(tipo)
-        leiaMais(leia)
-    }else if(tipo === 'Mostrar menos'){
-        mostraMenos()
+function verificaBotao(maisMenos, btn){
+
+    //console.log(maisMenos)
+    //console.log(btn)
+    var fluxo = document.getElementById(maisMenos).innerHTML
+    
+    if(fluxo === 'Leia mais...'){
+        //console.log(fluxo)Debug tipo para fluxo
+        leiaMais(btn)
+    }else if(fluxo === 'Mostrar menos'){
+        console.log(fluxo)
+        mostraMenos(btn)
     }
 }
 
@@ -53,7 +61,23 @@ function leiaMais(leia){
 }
 
 /* Função que subtrairá conteúdo no parágrafo IMPLEMENTAR*/
-function mostraMenos(){
+function mostraMenos(leia){
+    //console.log(leia)
 
+    if(leia === 'leia1'){
+        document.getElementById('leia1').innerHTML = p1
+        document.getElementById('btnLeia1').innerHTML = 'Leia mais...'
+    }else if(leia === 'leia2'){
+        document.getElementById('leia2').innerHTML = p2
+        document.getElementById('btnLeia2').innerHTML = 'Leia mais...'
+    }else if( leia === 'leia3'){
+        document.getElementById('leia3').innerHTML = p3
+        document.getElementById('btnLeia3').innerHTML = 'Leia mais...'
+    }
 }
+
+/*====================================================== Fim da lógica de mostrar mais e mostrar menos
+*/ 
+
+
 
