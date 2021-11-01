@@ -4,6 +4,7 @@ body, html{
     height: 100%;
 }
 
+
 /* Criando Aniimação da tela inicial */
 
 @keyframes animacao-index{
@@ -40,8 +41,6 @@ header{
 #inicio{
     background: white;
 }
-
-
 
 #aboutUs{
     height: 100%;
@@ -124,7 +123,13 @@ footer p a{
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) { 
     h1{
+        font-size: 40px;
+    }
+
+    h2{
+        margin-top: 30px;
         font-size: 30px;
+        font-weight: normal;
     }
 
     #caixaTexto1{
@@ -139,7 +144,13 @@ footer p a{
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) { 
     h1{
-        font-size: 2em;
+        font-size: 50px;
+    }
+
+    h2{
+        margin-top: 30px;
+        font-size: 40px;
+        font-weight: normal;
     }
 
     #caixaTexto1{
@@ -149,12 +160,20 @@ footer p a{
     #inicio{
         padding: 50px;
     }
+
+    
  }
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) { 
     h1{
-        font-size: 3em;
+        font-size: 60px;
+    }
+
+    h2{
+        margin-top: 30px;
+        font-size: 50px;
+        font-weight: normal;
     }
 
     #caixaTexto1{
@@ -170,14 +189,27 @@ footer p a{
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) { 
     h1{
-        font-size: 4em;
+        font-size: 70px;
     }
+
+    h2{
+        margin-top: 30px;
+        font-size: 60px;
+        font-weight: normal;
+    }
+
  }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
     h1{
+        font-size: 70px;
+    }
+
+    h2{
+        margin-top: 30px;
         font-size: 60px;
+        font-weight: normal;
     }
 
     #caixaTexto1{
